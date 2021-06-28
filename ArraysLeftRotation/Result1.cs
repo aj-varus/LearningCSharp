@@ -4,7 +4,7 @@ using System;
 namespace ArraysLeftRotation
 {
     class Result1
-{
+    {
 
     /*
      * Complete the 'minimumBribes' function below.
@@ -17,34 +17,39 @@ namespace ArraysLeftRotation
 
     // }
     
-    public static void minimumBribes(List<int> input)
-{
-    var clonedList = new List<int>(input);
-    var countBribes = 0;
-    
-    for (int i = 0; i < input.Count; i++)
-    {
-        var item = input[i];
-        var currentIndex = i;
-        
-        
-
-        while (currentIndex > 0 && clonedList[currentIndex - 1] > item)
+        public static void minimumBribes(List<int> input)
         {
-            if(countBribes > 2){ Console.WriteLine("Too chaotic"); break;}  
-            currentIndex--;
-            
-            countBribes++;
-        }
+            var countBribes = 0;
         
-        if(countBribes > 2) break;
+            for (int i = 0; i < input.Count; i++)
+            {
+                var item = input[i];
+                var currentIndex = i;
+                //countBribes = 0;
 
+                while (currentIndex > 0 && input[currentIndex - 1] > item)
+                {
+                    if(countBribes > 2){ Console.WriteLine("Too chaotic"); break;}  
+
+                    input[currentIndex] = input[currentIndex - 1];
+                    currentIndex--;
+                    
+                    countBribes++;
+                }
+
+                //if(countBribes > 2) break;
+
+
+                input[currentIndex] = item;
+
+            }
+            
+            Console.WriteLine($"{countBribes}");
+
+            // foreach (var number in input)
+            // {
+            //     System.Console.WriteLine($"{number} ");
+            // }
+        }   
     }
-    
-    Console.WriteLine($"{countBribes}");
-
-   
-}
-
-}
 }
