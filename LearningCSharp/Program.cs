@@ -21,9 +21,14 @@ namespace LearningCSharp
         }
         private static void Main(string[] args)
         {
-            TextWriter textWriter = new StreamWriter(@"C:\Users\Guest-Razor\source\repos\LearningCSharp\LearningCSharp\newfile.txt", true);
+            //var windowsPath = @"C:\Users\Guest-Razor\source\repos\LearningCSharp\LearningCSharp\newfile.txt";
+            var macPath = @"/Users/arjunsen/Projects/LearningCSharp/LearningCSharp/newfile.txt";
 
-            var lines = File.ReadAllLines(@"C:\Users\Guest-Razor\Downloads\2d-array-testcases\input\input09.txt");
+
+
+            TextWriter textWriter = new StreamWriter(macPath, true);
+
+            var lines = File.ReadAllLines(@"/Users/arjunsen/Projects/LearningCSharp/LearningCSharp/2d-array-testcases/input/input01.txt");
 
 
             var arr = lines.Select(line => line.TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList()).ToList();
