@@ -109,6 +109,8 @@ namespace ArraysLeftRotation
             Console.WriteLine($"{ans}");
 
             
+
+
         }   
     }
 }
