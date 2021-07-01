@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:43054",
-      "sslPort": 44364
+      "applicationUrl": "http://localhost:20625",
+      "sslPort": 44330
     }
   },
   "profiles": {
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Vidly1": {
+    "Foodly": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
