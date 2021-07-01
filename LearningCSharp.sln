@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCSharp", "LearningC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysLeftRotation", "ArraysLeftRotation\ArraysLeftRotation.csproj", "{6AC1A0A4-2669-44C9-BAF3-97BE145EFFC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimum2Swaps", "Minimum2Swaps\Minimum2Swaps.csproj", "{22757D42-1101-40D4-8C96-2707F5858CF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minimum2Swaps", "Minimum2Swaps\Minimum2Swaps.csproj", "{22757D42-1101-40D4-8C96-2707F5858CF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulation", "ArrayManipulation\ArrayManipulation.csproj", "{DFF0C211-4246-4992-8095-3A2D440A2004}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayManipulation", "ArrayManipulation\ArrayManipulation.csproj", "{DFF0C211-4246-4992-8095-3A2D440A2004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foodly", "Vidly1\Foodly.csproj", "{8C2CB4D8-3878-47DF-9D87-56203BC8F5FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidly", "Vidly\Vidly.csproj", "{93691D63-AEEB-4E38-B20A-34DAD420274C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{DFF0C211-4246-4992-8095-3A2D440A2004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFF0C211-4246-4992-8095-3A2D440A2004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFF0C211-4246-4992-8095-3A2D440A2004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2CB4D8-3878-47DF-9D87-56203BC8F5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2CB4D8-3878-47DF-9D87-56203BC8F5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2CB4D8-3878-47DF-9D87-56203BC8F5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2CB4D8-3878-47DF-9D87-56203BC8F5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93691D63-AEEB-4E38-B20A-34DAD420274C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93691D63-AEEB-4E38-B20A-34DAD420274C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93691D63-AEEB-4E38-B20A-34DAD420274C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93691D63-AEEB-4E38-B20A-34DAD420274C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
