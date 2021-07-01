@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ArrayManipulation
 {
@@ -24,31 +25,29 @@ namespace ArrayManipulation
 
         public static unsafe long ArrayManipulation(int n, List<List<int>> queries)
         {
-            long K, p, q, sum, i, j, max = 0, x = 0;
+            long max = 0, x = 0;
 
-            K = queries.Count;
+            long K = queries.Count;
 
             fixed (long* a = new long[n + 1])
             {
                 for (var idx = 0; idx < K; idx++)
                 {
-                    p = queries[idx][0];
-                    q = queries[idx][1];
-                    sum = queries[idx][2];
+                    long p = queries[idx][0];
+                    long q = queries[idx][1];
+                    long sum = queries[idx][2];
 
                     a[p] += sum;
 
                     if ((q + 1) <= n) a[q + 1] -= sum;
                 }
 
+                long i;
                 for (i = 1; i <= n; i++)
                 {
                     x += a[i];
                     if (max < x) max = x;
                 }
-
-                
-
                 return max;
             }
         }

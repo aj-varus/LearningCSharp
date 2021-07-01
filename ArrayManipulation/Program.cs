@@ -9,7 +9,7 @@ namespace ArrayManipulation
     {
         private static void Main(string[] args)
         {
-            using var streamReader = new StreamReader(@"C:\Users\Guest-Razor\Downloads\crush-testcases\input\input00.txt");
+            using var streamReader = new StreamReader(@"C:\Users\Guest-Razor\Downloads\crush-testcases\input\input14.txt");
 
             var firstMultipleInput = streamReader.ReadLine().TrimEnd().Split(' ');
 
