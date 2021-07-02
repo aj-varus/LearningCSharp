@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minimum2Swaps", "Minimum2Sw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayManipulation", "ArrayManipulation\ArrayManipulation.csproj", "{DFF0C211-4246-4992-8095-3A2D440A2004}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foodly", "Foodly\Foodly.csproj", "{0C11E56B-4FAE-479E-A8A9-591A8A1FB72F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foodly", "Foodly\Foodly.csproj", "{0C11E56B-4FAE-479E-A8A9-591A8A1FB72F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RansomNote", "RansomNote\RansomNote.csproj", "{F7F305F5-4B43-42C4-BBD8-857A38918C0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0C11E56B-4FAE-479E-A8A9-591A8A1FB72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C11E56B-4FAE-479E-A8A9-591A8A1FB72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C11E56B-4FAE-479E-A8A9-591A8A1FB72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F305F5-4B43-42C4-BBD8-857A38918C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F305F5-4B43-42C4-BBD8-857A38918C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F305F5-4B43-42C4-BBD8-857A38918C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F305F5-4B43-42C4-BBD8-857A38918C0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
