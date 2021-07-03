@@ -13,28 +13,19 @@ namespace RansomNote
 
             foreach (var word in magazine)
             {
-                var num = magazine.FindAll(arr => arr == word).Count;
-
-                dict.Add(word, num);
+                if(dict.ContainsKey(word)){
+                    dict[word]++;
+                    continue;
+                }
+                dict.Add(word, 1);
             }
 
             foreach (var word in note)
             {
-                try
-                {
-                    if (dict[word] == 0)
-                    {
-                        Console.WriteLine("No");
-                        return;
-                    }
-                }
-                catch (KeyNotFoundException)
-                {
+                if(!dict.ContainsKey(word) || dict[word] == 0) {
                     Console.WriteLine("No");
                     return;
                 }
-
-                
                 dict[word]--;
             }
 
@@ -47,7 +38,7 @@ namespace RansomNote
         private static void Main(string[] args)
         {
             using var streamReader =
-                new StreamReader(@"C:\Users\Guest-Razor\Downloads\ctci-ransom-note-testcases\input\input21.txt");
+                new StreamReader(@"/Users/arjunsen/Downloads/input01.txt");
             var firstMultipleInput = streamReader.ReadLine()?.TrimEnd().Split(' ');
 
             var m = Convert.ToInt32(firstMultipleInput[0]);
